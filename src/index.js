@@ -82,7 +82,6 @@ const populateFlights = (arr, start, end) => {
     tableBody.append(tb_row);
   }
 };
-console.log(flights);
 let start = 0;
 let end = 6;
 const id = setInterval(async () => {
