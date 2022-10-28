@@ -38,17 +38,10 @@ const tableBody = document.getElementById("table-body");
 //   },
 // ];
 const baseURL = "http://localhost:8000/";
-let flights = [];
-
-const addData = (data) => {
-  flights.push(data);
-};
 
 const fetchData = async () => {
   const res = await fetch(baseURL);
   const json = await res.json();
-  const data = JSON.stringify(json);
-  addData(data);
   return json;
 };
 

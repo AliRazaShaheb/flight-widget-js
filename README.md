@@ -1,4 +1,4 @@
-# flight-widget-js
+# flight-widget-js-api
 
 ## project by **Ali Raza Shaheb**
 

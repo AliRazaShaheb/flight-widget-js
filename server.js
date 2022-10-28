@@ -15,9 +15,7 @@ app.get("/", (req, res) => {
     method: "GET",
     url: "https://toronto-pearson-airport.p.rapidapi.com/departures",
     headers: {
-      "X-RapidAPI-Key":
-        process.env.RAPID_API_KEY ||
-        "d6f22a5797msh48e0b7b2aff05cfp1b3ee9jsn56263f38024d",
+      "X-RapidAPI-Key": process.env.RAPID_API_KEY,
       "X-RapidAPI-Host": "toronto-pearson-airport.p.rapidapi.com",
     },
   };
@@ -25,7 +23,7 @@ app.get("/", (req, res) => {
   axios
     .request(options)
     .then(function (response) {
-      console.log(response.data);
+      // console.log(response.data);
       res.json(response.data);
     })
     .catch(function (error) {
